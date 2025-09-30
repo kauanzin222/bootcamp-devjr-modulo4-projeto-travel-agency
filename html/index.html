@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Agency</title>
+  <style>
+    /* Altera a duração da transição de slide */
+  </style>
+
+  <!-- CSS Only -->
+  <link href="/css/carousel.css" rel="stylesheet">
+  <link href="/css/scrollspy.css" rel="stylesheet">
+  <link href="/css/style.css" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+  <!-- NavBar -->
+  <nav class="navbar bg-primary navbar-expand-lg" data-bs-theme="dark">
+    <div class="container-fluid">
+      <img src="/images/logo.png" width="55" height="50" alt="logo" class="me-3">
+      <a class="navbar-brand me-5" href="#">Agência de Viagens</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="pacotes.html">Pacote</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="hoteis.html">Hotéis</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="passeios.html">Passeios</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" data-bs-theme="light" type="search" placeholder="Pesquise"
+            aria-label="Pesquise" />
+          <button class="btn btn-secondary" type="submit">Pesquisar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carousel -->
+  <div class="container-lg mt-2 d-none d-md-block">
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner rounded">
+        <div class="carousel-item active">
+          <img src="/images/img1.jpg" class="d-block w-100" alt="montanha">
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Destinos Únicos</h1>
+            <h5>Temos destinos exclusivos para lugares paradísicos no mundo todo!</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/images/img2.jpg" class="d-block w-100" alt="natureza">
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Contato com a natureza</h1>
+            <h5>Desconecte do mundo e se conecte com a natureza</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/images/img3.jpg" class="d-block w-100" alt="cachoeira">
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Que tal um mergulho na natureza?</h1>
+            <h5>Aproveite nossos pacotes ecológicos exclusivos!</h5>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Próximo</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="container mt-5 text-center">
+
+    <!-- Title & Sub-title -->
+    <div class="row">
+      <div class="col">
+        <div class="display-6">
+          Aqui começa a sua aventura!
+        </div>
+        Reserve agora a sua experiência!
+      </div>
+    </div>
+
+    <!-- ScrollSpy -->
+    <div class="row mt-5 mb-5">
+      <div class="col-lg-3">
+        <div id="list-roteiro" class="list-group">
+          <a class="list-group-item list-group-item-action" href="#list-roteiro-1">Roteiro Aventuras</a>
+          <a class="list-group-item list-group-item-action" href="#list-roteiro-2">Roteiro Tranquilidade</a>
+          <a class="list-group-item list-group-item-action" href="#list-roteiro-3">Roteiro Romântico</a>
+          <a class="list-group-item list-group-item-action" href="#list-roteiro-4">Roteiro Família</a>
+          <a class="list-group-item list-group-item-action" href="#list-roteiro-5">Roteiro Praia</a>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div data-bs-spy="scroll" data-bs-target="#list-roteiro" data-bs-smooth-scroll="true" class="scrollspy-roteiro"
+          tabindex="0">
+          <h4 id="list-roteiro-1">Roteiro Aventura</h4>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis qui debitis quae, libero quas ab deleniti
+            consequatur voluptas commodi eos enim fuga unde corrupti, dolorem provident quaerat aliquam, maiores quasi
+            similique. Molestiae possimus quidem veritatis alias sed soluta deleniti itaque inventore, ab amet accusamus
+            iusto qui eaque provident distinctio eos laborum harum quibusdam ipsam velit, impedit, et eum autem? Magnam
+            incidunt autem nisi hic veritatis tenetur omnis tempore ut voluptatibus dignissimos perferendis fuga,
+            explicabo earum obcaecati possimus cumque ad molestias at sapiente, nobis ipsum? Assumenda dicta corrupti
+            non, illum quo neque tenetur provident animi, enim earum sequi nihil cupiditate numquam hic expedita
+            molestiae ducimus vel dolores modi laboriosam dignissimos nisi rem voluptate maxime! Tenetur id fugit magni
+            aut quos inventore officiis nemo facilis error autem. Ipsum iste quae atque temporibus repudiandae incidunt
+            eum similique. Quidem ad totam consectetur animi impedit, voluptas esse asperiores expedita in porro id
+            officiis cupiditate dolor ratione quasi optio ipsum. Repellendus, aliquid ut consectetur ab soluta,
+            obcaecati sint doloremque quis animi ipsam voluptates natus explicabo itaque ex in quas corrupti voluptas
+            ratione. Numquam expedita laboriosam perferendis ea aspernatur ducimus nulla omnis earum nemo et! Nihil
+            placeat magnam et voluptas assumenda laudantium. Eos quos aut explicabo perspiciatis.</p>
+          <h4 id="list-roteiro-2">Roteiro Tranquilidade</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eum eveniet eius, fugit cum aliquam atque.
+            Porro officia repellendus praesentium perferendis? Illum non, alias temporibus quae ea odio numquam
+            excepturi reiciendis at facere ipsa amet iusto accusantium officiis eum minus qui placeat. Delectus,
+            obcaecati sapiente illo at provident minus, ad veritatis ut modi, nemo laborum nesciunt beatae
+            necessitatibus maiores quaerat ex. Distinctio dolore quidem incidunt voluptate quos impedit quaerat iure
+            dolorem obcaecati quam provident dicta, officia eveniet quis iste, itaque asperiores aliquid modi harum
+            molestias soluta minima similique atque ad? Harum, asperiores culpa iure quod reiciendis quis fugit ipsa
+            vitae, fuga non rem magni explicabo obcaecati consectetur. Molestiae molestias eaque tempore necessitatibus
+            quos quaerat quidem? Dolorum tenetur molestias voluptatibus adipisci cum at nesciunt. Nemo aut aperiam
+            ducimus asperiores nesciunt autem, et soluta debitis porro beatae, quae, omnis cumque. Deserunt commodi
+            numquam tempore veniam. Ratione amet perferendis maiores nam dignissimos dolor reprehenderit voluptatem, non
+            perspiciatis eos minus, assumenda nulla magnam debitis exercitationem ducimus, repudiandae labore? Excepturi
+            reprehenderit, tempore libero nam iusto quisquam, quaerat repudiandae repellendus earum nostrum est aliquid
+            in ea saepe dolor sit illo. Numquam, ipsum quos debitis eligendi corporis, alias dolores natus ratione
+            quibusdam beatae illum perferendis explicabo voluptatem.</p>
+          <h4 id="list-roteiro-3">Roteiro Romântico</h4>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores consequuntur repudiandae tempora
+            voluptatum, dignissimos sunt quod, in esse inventore, delectus quas perferendis quisquam dolor nobis
+            quibusdam fugit veniam ipsam voluptatibus molestias. Quam non pariatur voluptatibus ducimus facere
+            reiciendis aspernatur quasi ipsam, architecto omnis possimus porro corporis voluptates, quibusdam unde optio
+            nisi dolorem aliquid rerum debitis? Temporibus consequuntur laboriosam delectus, deserunt tempora
+            accusantium vel quaerat, rerum aperiam ipsum accusamus obcaecati adipisci quidem, nihil soluta quisquam
+            aliquid molestiae molestias repellendus eum iste distinctio ex! Ipsa fugiat deleniti voluptatum debitis
+            praesentium at corporis nam obcaecati quos blanditiis atque dicta sunt hic laudantium cumque velit
+            perspiciatis laborum, sed facere fugit aspernatur, quis ad quidem. Natus in doloremque blanditiis amet
+            officiis fuga mollitia aut voluptates? Adipisci soluta similique sed velit ipsum consequuntur laboriosam
+            natus illum quasi praesentium nobis qui temporibus atque nostrum quis perspiciatis commodi eos, dignissimos
+            voluptate magni debitis possimus. Quibusdam culpa atque rem perferendis ea cumque totam facilis expedita
+            architecto consequuntur recusandae accusantium quod, temporibus quam, vitae fuga eveniet blanditiis maiores
+            praesentium deleniti itaque consequatur iure, autem quaerat. Debitis maxime quisquam laudantium eum
+            voluptatum voluptate, quibusdam facilis quidem repudiandae adipisci cum eveniet numquam ex. Impedit,
+            suscipit. Nisi inventore omnis quos ab repellendus! Aperiam.</p>
+          <h4 id="list-roteiro-4">Roteiro Família</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa fuga modi, temporibus voluptates saepe sed,
+            ipsam itaque voluptatibus laudantium dolor ullam reiciendis optio. Libero culpa quo dolore, temporibus
+            praesentium magni? Quis tenetur ex ea necessitatibus obcaecati. Accusamus, recusandae voluptatibus sapiente,
+            praesentium pariatur est exercitationem, sit illo earum cumque magni neque tempore dolor quia? Tenetur
+            voluptate officia debitis autem quae molestiae impedit est ea fuga repellat id a voluptatem porro earum
+            facere iste quod numquam, vero, ipsam veritatis dignissimos ipsum. Praesentium ipsum totam similique, odit
+            blanditiis saepe sapiente dolorum alias reiciendis vitae dignissimos sunt. Totam delectus sit tenetur
+            facilis explicabo quos quo ipsa, nisi dicta vel? Hic, laboriosam natus. Esse consectetur veniam accusamus
+            officia alias placeat beatae consequatur rem vel sapiente nemo eligendi harum ipsam amet, veritatis,
+            molestias mollitia provident quo sed distinctio architecto saepe delectus repellendus. Impedit dignissimos
+            qui nesciunt sequi maiores odit quidem praesentium error rem asperiores ipsa ut eligendi quisquam officiis
+            dolorem unde, explicabo ad saepe voluptatum consequatur voluptatem fugiat. Esse non adipisci reiciendis!
+            Veritatis eum praesentium, quas omnis aliquid illo, unde consequuntur voluptatum, voluptates a earum?
+            Explicabo, pariatur sapiente laboriosam, eveniet quasi harum repellendus ab adipisci qui exercitationem nam
+            iusto magnam sed iste eos non impedit repellat.</p>
+          <h4 id="list-roteiro-5">Roteiro Praia</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat beatae nobis deleniti assumenda.
+            Voluptatum nobis quam sapiente officia, accusantium nihil maiores autem iure dignissimos repellat? Aliquam
+            expedita laborum debitis laudantium ducimus labore autem minus cumque mollitia, architecto velit distinctio!
+            Excepturi voluptas quia quisquam, adipisci blanditiis repellendus. Exercitationem tempora unde praesentium
+            quaerat in. Ad nostrum laborum odio, atque doloribus suscipit sunt libero, exercitationem illum assumenda
+            sapiente debitis nesciunt dicta error, molestias voluptas? Nesciunt, pariatur tempora et veniam est
+            accusamus culpa fugiat laudantium earum totam dolor quaerat neque adipisci quidem explicabo quam facere
+            saepe ad! Rem, eos recusandae illo quas deserunt itaque temporibus natus est ab. Error itaque repudiandae
+            rerum totam, illo animi mollitia! Fugit, nostrum in dolorem reprehenderit aperiam architecto aut modi
+            numquam! Voluptatem suscipit, aliquid harum nemo ad iste quas earum! Voluptatibus, illum nostrum, dolorum
+            velit magnam ad veritatis esse laudantium quam a reiciendis, vel debitis expedita illo maiores. Ea eos ad ut
+            quisquam minima consequuntur! Amet asperiores fugit dolor laborum ipsum ratione minus sint illum dolorum
+            odit necessitatibus, voluptatem, harum reprehenderit aliquid id incidunt molestiae quo perferendis, totam
+            numquam ad? Libero neque quidem quam dolorem, voluptatem porro magni doloribus exercitationem dolorum
+            similique alias doloremque voluptatum inventore praesentium? Beatae, explicabo?</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+  <!-- JavaScript Bundle wiht Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
