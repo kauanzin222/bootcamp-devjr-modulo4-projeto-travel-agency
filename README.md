@@ -1,8 +1,8 @@
 # Travel Agency Project ✈️
 
-  -  Primeiro projeto onde tive um primeiro contato com **BootStrap**. Aprendi os passos básicos de como criar um site inteiramente baseado no BootStrap, sem a presença de classes de CSS minhas.  
-  - [Clique aqui para visualizar imagem exemplo](https://github.com/kauanzin222/bootcamp-devjr-modulo4-projeto-travel-agency/blob/main/images/travel-agency.jpeg).  
-  - Com BootStrap a tarefa de responsividade se tornou muito mais simples e fácil de manusear.
+  - First project where I had my first contact with **Bootstrap**. I learned the basic steps of how to create a website entirely based on Bootstrap, without any of my own CSS classes.
+  - [Click here to view sample image](https://github.com/kauanzin222/bootcamp-devjr-modulo4-projeto-travel-agency/blob/main/images/travel-agency.jpeg).  
+  - With Bootstrap, the task of responsiveness has become much simpler and easier to handle.
 
 ## Final Result: 
 
